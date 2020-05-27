@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.biblioailtech">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ModifActivity"
+            android:parentActivityName=".AffLivreAdmin"></activity>
+        <activity
+            android:name=".AjoutActivity"
+            android:label="BiblioAiltech | Ajouter un livre"
+            android:parentActivityName=".AffLivreAdmin" />
+        <activity
+            android:name=".AffLivreAdmin"
+            android:label="BiblioAiltech | Mode Administration"
+            android:parentActivityName=".Connexion" />
+        <activity
+            android:name=".Charte"
+            android:label="BiblioAiltech | Charte utilisation"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Connexion"
+            android:label="BiblioAiltech | Connexion"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AfficherLivre"
+            android:label="BiblioAiltech | Tous les livres"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="BiblioAiltech | Accueil">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
